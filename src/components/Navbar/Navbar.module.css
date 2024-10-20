@@ -1,0 +1,27 @@
+.social {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .logout {
+    padding: 10px; /* Add padding around the logout link */
+    cursor: pointer; /* Change cursor on hover */
+    color: #007bff; /* Match link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 15px; /* Add some space to the right */
+  }
+  
+  .logout:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker color on hover */
+  }
+  
+  .socialMedia a {
+    margin: 0 10px; /* Space between social icons */
+    color: #007bff; /* Icon color */
+  }
+  
+  .socialMedia a:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  

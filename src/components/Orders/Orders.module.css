@@ -1,0 +1,58 @@
+.ordersContainer {
+    padding: 20px; /* Padding around the container */
+    background-color: #7c9fc2; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(147, 134, 134, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text */
+}
+
+.ordersList {
+    margin-top: 20px; /* Space above the orders list */
+}
+
+.orderCard {
+    background-color: #ffffff; /* White background for each order card */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    margin-bottom: 15px; /* Space between order cards */
+    transition: box-shadow 0.3s, transform 0.3s; /* Transition effect for hover */
+}
+
+.orderCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.orderHeader {
+    color: #007bff; /* Change "Your Orders" title color to blue */
+}
+
+.orderTitle {
+    color: #007bff; /* Change the color of the order ID title to blue */
+}
+
+.orderDate,
+.orderStatus,
+.orderTotal {
+    color: #28a745; /* Change the color of the date, status, and total */
+}
+
+.orderCard h4 {
+    margin-top: 15px; /* Space above item list and total */
+    margin-bottom: 5px; /* Space below the heading */
+    color: #6c757d; /* Change color of item list heading */
+}
+
+.orderCard ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding-left: 0; /* Remove default padding */
+}
+
+.orderCard li {
+    margin: 5px 0; /* Space between items in the list */
+}
+
+.orderCard p {
+    margin: 5px 0; /* Space between paragraphs */
+}

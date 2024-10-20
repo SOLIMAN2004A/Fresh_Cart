@@ -1,0 +1,78 @@
+.footer {
+    background-color: rgb(206, 212, 218); /* Light background color */
+    padding: 20px; /* Space inside the footer */
+    text-align: center; /* Center the content */
+    position: relative; /* Change to relative positioning */
+    width: 100%; /* Make it full width */
+    z-index: 1000; /* Ensure it appears above other content */
+    height: 180px; /* Fixed height for the footer */
+    margin-top: auto; /* Push it down in flex container */
+}
+
+.container {
+    max-width: 1200px; /* Limit the max width */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-bottom: 20px; /* Add space for the footer */
+    min-height: 100vh; /* Ensure container takes full height */
+}
+
+.footerLinks {
+    margin-bottom: 15px; /* Space below the links */
+    display: flex; /* Use flexbox for links */
+    flex-wrap: wrap; /* Wrap links to new lines if needed */
+    justify-content: center; /* Center links */
+}
+
+.footerLinks a {
+    margin: 0 15px; /* Horizontal space between links */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    font-size: 1.1em; /* Increase link size */
+}
+
+.footerLinks a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.socialMedia {
+    margin-bottom: 15px; /* Space below social media icons */
+    display: flex; /* Use flexbox for social media */
+    justify-content: center; /* Center icons */
+}
+
+.socialMedia a {
+    margin: 0 10px; /* Horizontal space between social icons */
+    color: #007bff; /* Icon color */
+    font-size: 1.5em; /* Increase icon size */
+}
+
+.socialMedia a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.footerText {
+    margin-top: 20px; /* Space above footer text */
+    color: #6c757d; /* Text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footerLinks {
+        flex-direction: column; /* Stack links vertically on small screens */
+    }
+
+    .footerLinks a {
+        margin: 5px 0; /* Vertical margin for stacked links */
+    }
+
+    .socialMedia {
+        flex-direction: column; /* Stack social icons vertically */
+    }
+
+    .socialMedia a {
+        margin: 5px 0; /* Vertical margin for stacked icons */
+    }
+}

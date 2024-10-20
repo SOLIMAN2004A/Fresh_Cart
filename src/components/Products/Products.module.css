@@ -1,0 +1,54 @@
+.productGrid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space between items */
+  }
+  
+  .productCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0; /* Vertical margin for space between rows */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex: 0 1 100%; /* Take full width */
+  }
+  
+  .productCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .productImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .button {
+    flex: 1; /* Allow buttons to take equal space */
+    margin-right: 5px; /* Add spacing between buttons */
+  }
+  
+  .button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  
+  /* Media Queries for responsive design */
+  @media (min-width: 768px) {
+    .productCard {
+      flex: 0 1 calc(33.33% - 20px); /* 3 cards per row for medium screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .productCard {
+      flex: 0 1 calc(25% - 20px); /* 4 cards per row for larger screens */
+    }
+  }
+  
